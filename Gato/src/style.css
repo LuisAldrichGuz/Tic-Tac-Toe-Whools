@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tai+Viet&display=swap');
+
+
+/* DANDO ESTILO AL BODY */
+body{
+    width: 100vw;
+    height : 90vh;
+    background-color: rgb(20, 20, 20);
+    place-items: center; /* Alineando todo al centro */
+    display: grid; /* DISPLAY DE TIPO CUADRIULA */
+    font-family: 'Noto Sans Tai Viet';
+}
+
+#game .cell{
+    width: 90px;
+    height: 90px;
+    font-size: 4rem;
+    place-items: center;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    margin: 7px;
+    float: left; /* Para que se acomoden en linea */
+}
+
+#game .cell:hover{ /*  */
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+#game{
+    width: 320px;
+    height: 290px;
+    text-align: center;
+}
+
+#results{
+    position: relative;
+    top: 30px;
+    height: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.player-one-shadow {
+    box-shadow: 0px 0px 1px 4px red;
+    color: red;
+}
+
+.player-two-shadow {
+    box-shadow: 0px 0px 1px 4px blue;
+    color: blue
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .logo a {
+    transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+    -webkit-transform: perspective(2.5em) rotateX(15deg) scaleY(0.8);
+    transition: all 0.5s;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 75px;
+    color: #fb2a2a;
+    text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #7f0303, 0 3px 0 #840303, 0 5px 0 #890303, 0 7px 0 #8e0303, 0 9px 0 #930303, 0 6px 50px rgba(252, 92, 92, 0.8);
+  }
+
+
+  .logo a:hover {
+    -webkit-transform: perspective(8em) rotateX(11deg) scale(1.2);
+    transform: perspective(8em) rotateX(11deg) scale(1.2);
+    text-shadow: 0 -1px 15px rgba(0, 0, 0, 0.9), 0 1px 0 #7f0303, 0 3px 0 #840303, 0 5px 0 #890303, 0 7px 0 #8e0303, 0 9px 0 #930303, 0 6px 50px rgba(252, 92, 92, 0.8);
+}
